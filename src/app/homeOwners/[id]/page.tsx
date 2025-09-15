@@ -1,0 +1,1 @@
+//to show the profile of a homeowner based on the id in the url

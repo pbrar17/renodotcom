@@ -1,0 +1,1 @@
+//to show the profile of a contractor based on the id in the url
