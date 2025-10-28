@@ -19,10 +19,17 @@ export default function NewProjectPage() {
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      setForm((prev) => ({ ...prev, images: Array.from(e.target.files) }));
-    }
-  };
+  const files = e.target.files;
+  if (!files) return; // exit if null
+  setForm((prev) => ({ ...prev, images: Array.from(files) }));
+};
+
+
+  // const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   if (e.target.files) {
+  //     setForm((prev) => ({ ...prev, images: Array.from(e.target.files) }));
+  //   }
+  // };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

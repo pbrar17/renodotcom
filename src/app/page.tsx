@@ -1,4 +1,9 @@
+// const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+// function random(){
+//   console.log("Supabase Anon Key:", supabaseAnonKey);
+// };
 export default function Home() {
+  // random();
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-300">
       <div className="text-center bg-white/90 backdrop-blur-sm shadow-xl rounded-2xl p-10 max-w-lg">
@@ -25,5 +30,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    
   );
 }
