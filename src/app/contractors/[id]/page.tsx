@@ -1,5 +1,5 @@
 //to show the profile of a contractor based on the id in the url
-export default function ContractorProfilePage({ params }: { params: { id: string } }) {
+export default function ContractorProfilePage({ params }: { params: any }) {
     const { id } = params;
 
     return (
