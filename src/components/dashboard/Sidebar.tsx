@@ -3,7 +3,7 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ role }: SidebarProps) {
-  let links = [];
+  let links: string[] = [];
 
   if (role === "ADMIN") {
     links = ["Dashboard", "Users", "Projects", "Settings"];
