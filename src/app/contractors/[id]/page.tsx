@@ -1,7 +1,8 @@
 //to show the profile of a contractor based on the id in the url
-import { type PageProps } from "next";
+// import { type PageProps } from "next";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
-export default async function ContractorProfilePage({ params }: PageProps<{ id: string }>) {
+export default async function ContractorProfilePage({ params }: any) {
     const { id } = await params;
 
     return (
