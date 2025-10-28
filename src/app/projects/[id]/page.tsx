@@ -1,5 +1,6 @@
 //to show a proejct based on the id in the url
-export default function ProjectPage({ params }: { params: { id: string } }) {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export default function ProjectPage({ params }: { params: any }) {
     const { id } = params;
 
     return (

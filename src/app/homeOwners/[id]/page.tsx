@@ -1,5 +1,6 @@
 //to show the profile of a homeowner based on the id in the url
-export default function HomeOwnerProfilePage({ params }: { params: { id: string } }) {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export default function HomeOwnerProfilePage({ params }: any) {
     const { id } = params;
 
     return (
