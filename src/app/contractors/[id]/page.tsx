@@ -1,6 +1,8 @@
 //to show the profile of a contractor based on the id in the url
-export default function ContractorProfilePage({ params }: any) {
-    const { id } = params;
+import { type PageProps } from "next";
+
+export default async function ContractorProfilePage({ params }: PageProps<{ id: string }>) {
+    const { id } = await params;
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-800 to-slate-300 p-8">
